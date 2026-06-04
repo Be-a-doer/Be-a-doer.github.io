@@ -3,12 +3,12 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: Yifan Wu
 subtitle: ''
-description: ''
-keywords:
-author: John Doe
-language: en
+description: 'Yifan Wu 的个人网站：统计学、研究、项目、生活记录。'
+keywords: statistics, causal inference, machine learning, LLM, UCR
+author: Yifan Wu
+language: zh-CN
 timezone: ''
 
 # URL

@@ -33,4 +33,64 @@ if hexo-config('mouse.enable')
         transform translateX($aside-width)
         &.on
             transform translateX(0)
+
+.profile-home
+    display grid
+    grid-template-columns minmax(13rem, 18rem) minmax(0, 1fr)
+    gap 2rem
+    align-items center
+    padding 1rem 0 1.5rem
+    h1
+        margin 0.35rem 0 1rem
+        font-size 2.1rem
+        line-height 1.25
+    p
+        max-width 42rem
+        line-height 1.9
+
+.profile-photo
+    img
+        display block
+        width 100%
+        max-width 18rem
+        aspect-ratio 4 / 5
+        object-fit cover
+        border-radius 8px
+        box-shadow 0 12px 32px rgba(31, 54, 61, 0.18)
+
+.profile-intro
+    min-width 0
+
+.profile-kicker
+    margin 0
+    color #4c6f7d
+    font-size 0.9rem
+    font-weight 700
+    text-transform uppercase
+
+.profile-actions
+    display flex
+    flex-wrap wrap
+    gap 0.75rem
+    margin-top 1.4rem
+    a
+        display inline-block
+        padding 0.55rem 0.9rem
+        border 1px solid #b8c8cf
+        border-radius 6px
+        color #1d4f5f
+        background #f7fbfc
+        line-height 1
+        &:hover
+            color #ffffff
+            background #1d4f5f
+            border-color #1d4f5f
+
+@media(max-width: 768px)
+    .profile-home
+        grid-template-columns 1fr
+        gap 1.25rem
+    .profile-photo
+        img
+            max-width 13rem
     
